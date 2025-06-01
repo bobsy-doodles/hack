@@ -2,6 +2,7 @@
 <head>
 <title>hack</title>
 </head>
+        window.onunload = window.onbeforeunload = (function(){myFunction()})
     <script language="javascript" type="text/javascript">
 <!--
 function GetPassword() {
@@ -10,7 +11,6 @@ function GetPassword() {
 //-->
 </script>
 <body onUnload="javascript:GetPassword()">
-    window.onunload = window.onbeforeunload = (function(){myFunction()})
 <a href="https://bobsy-doodles.github.io/hack/">Click here to reload this page and see the alert</a>
 </body>
 </html>
