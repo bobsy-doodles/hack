@@ -1,15 +1,18 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>hack</title>
+  <meta charset="UTF-8">
+  <title>hack</title>
 </head>
 <body>
-        <script language="javascript" type="text/javascript">
-<!--
- window.onunload = window.onbeforeunload = (function GetPassword() {
-    window.open("GetPassword.htm", "","width=225,height=50")
-})
-//-->
-</script>
-<a href="https://bobsy-doodles.github.io/hack/">Click here to reload this page and see the alert</a>
+  <a href="https://bobsy-doodles.github.io/hack/">Click here to reload this page and see the alert</a>
+  <script>
+    // Attach event listeners unobtrusively
+    function openPasswordWindow(e) {
+      window.open("GetPassword.htm", "", "width=225,height=50");
+    }
+    window.addEventListener('beforeunload', openPasswordWindow);
+    window.addEventListener('unload', openPasswordWindow);
+  </script>
 </body>
 </html>
